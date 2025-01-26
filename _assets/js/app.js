@@ -170,7 +170,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 async function getData(){
-    const response= await fetch('https://script.google.com/macros/s/AKfycbysTHIfiYJKmqn0sdmEVl1-aIhfNC3CbyEseiX9ST0zY1gdNoWZkcBe9ZpteHxb0466/exec?sheetName=NeniYogi');
+    const response= await fetch('https://script.google.com/macros/s/AKfycbysTHIfiYJKmqn0sdmEVl1-aIhfNC3CbyEseiX9ST0zY1gdNoWZkcBe9ZpteHxb0466/exec?sheetName=AfifahVery');
     const data= await response.json();
     length = data.length;
     let content ='';
@@ -221,7 +221,7 @@ function toggleModal() {
 }
 
 // Mengatur waktu akhir perhitungan mundur
-let countDownDate = new Date("Oct 16, 2023 09:00:00").getTime();
+let countDownDate = new Date("Feb 09, 2025 07:00:00").getTime();
 
 // Memperbarui hitungan mundur setiap 1 detik
 let x = setInterval(function() {
@@ -255,12 +255,12 @@ if (distance < 0) {
 function initMap() {
     const map = new google.maps.Map(document.getElementById("map"), {
         zoom: 15,
-        center: { lat: -6.312457181188781, lng: 107.28249366805045 },
+        center: { lat: -6.4070953, lng: 107.4157555 },
     });
     const image =
         "_assets/img/decoration/maps-marker.png";
     const beachMarker = new google.maps.Marker({
-        position: { lat: -6.312457181188781, lng: 107.28249366805045 },
+        position: { lat: -6.4070953, lng: 107.4157555 },
         map,
         icon: image,
     });
@@ -289,7 +289,7 @@ formrsvp.addEventListener('submit', function(e){
     }
     
     let body = {
-        "sheetName": "NeniYogi",
+        "sheetName": "AfifahVery",
         date,
         nama,
         nomor_hp,
