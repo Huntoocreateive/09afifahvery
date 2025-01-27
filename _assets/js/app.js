@@ -16,25 +16,6 @@ document.addEventListener('DOMContentLoaded', function() {
     AOS.init();
     // Handle video player
     const player = new Plyr('#player');
-    // Handle slider gallery
-    const slider = tns({
-        container: '.row-slider',
-        nav: false,
-        controls: false,
-        edgePadding: 10,
-        mouseDrag: true,
-        items: 2,
-        swipeAngle: 15,
-        loop: false,
-        slideBy: 'page',
-        autoplay: false,
-        preventScrollOnTouch: 'auto',
-        responsive: {
-            768: {
-                edgePadding: 50,
-            }
-        }
-    });
     
     /* 
     |======================================
@@ -250,23 +231,6 @@ if (distance < 0) {
     document.getElementById("countdown-row").innerHTML = "SELAMAT BERBAHAGIA";
 }
 }, 1000);
-
-// init Map
-function initMap() {
-    const map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 15,
-        center: { lat: -6.4070953, lng: 107.4157555 },
-    });
-    const image =
-        "_assets/img/decoration/maps-marker.png";
-    const beachMarker = new google.maps.Marker({
-        position: { lat: -6.4070953, lng: 107.4157555 },
-        map,
-        icon: image,
-    });
-}
-
-window.initMap = initMap;
 
 let formrsvp = document.getElementById('rsvp');
 
